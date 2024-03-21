@@ -1,33 +1,36 @@
 {
-	"titleBarName": "Friday Night Funkin' - FNF Mod",
+	"discordRpc": null,
+	"skinnableGFs": [],
+	"downloadLink": null,
+	"locked": false,
+	"BFskins": [],
+	"name": "FNF Mod",
+	"keyNumbers": [
+		4
+	],
+	"description": "The YoshiCrafterEngine Discord Presents: FNF Mod",
 	"intro": {
+		"newgrounds": "newgrounds",
 		"authors": [
 			"ninjamuffin99",
 			"phantomArcade",
 			"kawaisprite",
 			"evilsk8er"
 		],
+		"assoc": [
+			"In association",
+			"with"
+		],
 		"gameName": [
 			"Friday Night Funkin'",
 			"YoshiCrafter",
 			"Engine"
 		],
-		"newgrounds": "newgrounds",
-		"bpm": 102,
-		"assoc": [
-			"In association",
-			"with"
-		],
-		"present": "present"
+		"present": "present",
+		"bpm": 102
 	},
 	"skinnableBFs": [],
-	"skinnableGFs": [],
-	"GFskins": [],
-	"keyNumbers": [
-		4
-	],
-	"BFskins": [],
-	"name": "FNF Mod",
-	"locked": false,
-	"description": "The YoshiCrafterEngine Discord Presents: FNF Mod"
+	"titleBarName": "Friday Night Funkin' - FNF Mod",
+	"downloadLinkAlt": null,
+	"GFskins": []
 }

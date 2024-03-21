@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logoFUCKING.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logobumpin0000" x="0" y="0" width="191" height="151" frameX="-2" frameY="-2" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0001" x="191" y="0" width="194" height="151" frameX="-1" frameY="-2" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0002" x="385" y="0" width="189" height="153" frameX="-2" frameY="0" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0003" x="574" y="0" width="191" height="154" frameX="-2" frameY="-1" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0004" x="765" y="0" width="197" height="155" frameX="0" frameY="-2" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0005" x="0" y="155" width="191" height="154" frameX="-2" frameY="-2" frameWidth="197" frameHeight="157"/>
+	<SubTexture name="logobumpin0006" x="191" y="155" width="189" height="151" frameX="-4" frameY="-2" frameWidth="197" frameHeight="157"/>
+</TextureAtlas>
