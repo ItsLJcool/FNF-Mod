@@ -1,1 +1,14 @@
-{"songs":[]}
+{
+	"songs": [
+		{
+			"difficulties": [
+				"Hard"
+			],
+			"displayName": "Bob Reslaught",
+			"char": "bobWhar",
+			"bpm": 205,
+			"name": "bob-mod",
+			"color": "#FFFFFF"
+		}
+	]
+}
