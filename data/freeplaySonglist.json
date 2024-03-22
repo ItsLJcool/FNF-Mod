@@ -9,6 +9,16 @@
 			"bpm": 205,
 			"name": "bob-mod",
 			"color": "#FFFFFF"
+		},
+		{
+			"displayName": null,
+			"difficulties": [
+				"Shploink"
+			],
+			"char": "bf",
+			"color": "#FFFFFF",
+			"name": "Funkin' Strategy",
+			"bpm": 150
 		}
 	]
 }
