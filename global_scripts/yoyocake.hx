@@ -1,5 +1,9 @@
 //a
 
+function oldnew() {
+    PlayState.isWidescreen = false;
+}
+
 function beatHit(curBeat) {
 	if (canBop) FlxG.camera.zoom += bopAmount;
 }
