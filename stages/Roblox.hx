@@ -2,9 +2,10 @@
 function create() {
     autoCamZooming = false;
     defaultCamZoom = 0.5;
-	bg = new FlxSprite(0, 50).loadGraphic(Paths.image('stages/Rat/rat2'));
+	bg = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/Rat/rat2'));
 	bg.updateHitbox();
     bg.screenCenter();
+    bg.setPosition(bg.x,bg.y+50);
 	bg.antialiasing = true;
     bg.scale.set(1.8,1.8);
     bg.scrollFactor.set(1,1);
@@ -25,14 +26,16 @@ function create() {
     gf.scrollFactor.set(1,1);
 
     boyfriend.setPosition(boyfriend.x+250,boyfriend.y-100);
-    gf.setPosition(400, -30);
+    gf.setPosition(400, 20);
     dad.setPosition(dad.x-300,dad.y-100);
 }
 
 function createPost() {
-	spacyScreen = new FlxSprite(-400, -400).makeGraphic(Std.int(FlxG.width * 5), Std.int(FlxG.height * 5), 0xFFFFFFFF);
+	spacyScreen = new FlxSprite(-400, -400).makeGraphic(Std.int(FlxG.width * 5), Std.int(FlxG.height * 5), 0xFF6a60b3);
     spacyScreen.screenCenter();
-    spacyScreen.alpha = 0.001;
+    spacyScreen.alpha = 0.7;
+    spacyScreen.blend = 9;
+    spacyScreen.scrollFactor.set(0.9,0.9);
     add(spacyScreen);
 
 	flashScreen = new FlxSprite(-400, -400).makeGraphic(Std.int(FlxG.width * 5), Std.int(FlxG.height * 5), 0xFFFFFFFF);
@@ -82,9 +85,10 @@ function stepHit(curStep){
             gf.scrollFactor.set();
             FlxTween.tween(camGame, {zoom: 1},  1);
         case 576:
+            FlxTween.tween(spacyScreen, {alpha: 0.001},  1);
             FlxTween.tween(spacy, {alpha: 0.001},  1);
             gf.scrollFactor.set(1,1);
-            gf.setPosition(400, -30);
+            gf.setPosition(400, 20);
             autoCamZooming = true;
             autoCamPos = true;
             FlxTween.tween(camHUD, {alpha: 1},  1);
@@ -96,5 +100,15 @@ function stepHit(curStep){
             bg.alpha = 1;
             dad.alpha = 1;
             boyfriend.alpha = 1;
+        case 592, 624,656,688:
+            defaultCamZoom = 0.7;
+        case 608, 640,672:
+            defaultCamZoom = 0.6;
+        case 704:
+            defaultCamZoom = 0.8;
+            autoCamPos = false;
+        case 708:
+            autoCamPos = true;
+            defaultCamZoom = 0.6;
     }
 }
