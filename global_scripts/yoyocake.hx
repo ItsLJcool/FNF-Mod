@@ -1,6 +1,6 @@
 //a
 
-function oldnew() {
+function create() {
     PlayState.isWidescreen = false;
 }
 
